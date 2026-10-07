@@ -1,31 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
+
   <title>Michael A. Bruder | Gemologist</title>
+
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      background-color: #ffffff;
+    }
+
+    body {
       min-height: 100vh;
+      min-height: 100dvh;
       display: flex;
-      align-items: center;
       justify-content: center;
-      background: white;
-      font-family: Arial, sans-serif;
+      align-items: center;
     }
 
     .logo {
-      width: 85%;
-      max-width: 900px;
+      display: block;
+      width: 50%;
+      max-width: 750px;
       height: auto;
+      object-fit: contain;
+    }
+
+    /* Tablet */
+    @media (max-width: 900px) {
+      .logo {
+        width: 70%;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .logo {
+        width: 92%;
+      }
     }
   </style>
 </head>
+
 <body>
-  <img src="website_name.webp"
-       alt="Michael A. Bruder - Gemologist"
-       class="logo">
+
+  <img
+    src="michael_bruder_gem_logo.png"
+    alt="Michael A. Bruder - Gemologist"
+    class="logo"
+  >
+
 </body>
 </html>
